@@ -64,8 +64,9 @@ while manager.next_event():
 
     # ---------- Grab vectors containing particle info --------- #
     ophits   = manager.get_data(larlite.data.kOpHit,"ophit")
-    #mcdata   = manager.get_data(larlite.data.kMCTrack,"mcreco")                                                                                                
-    #mc       = manager.get_data(larlite.data.kMCTruth,"generator")                                                                                             
+    if mc == 1:
+        mcdata   = manager.get_data(larlite.data.kMCTrack,"mcreco")                                                                                                
+        mc       = manager.get_data(larlite.data.kMCTruth,"generator")                                                                                             
     #shower   = manager.get_data(larlite.data.kMCShower,"mcreco")
     # ---------------------------------------------------------- #
 
