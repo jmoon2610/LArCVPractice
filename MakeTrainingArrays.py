@@ -70,7 +70,7 @@ while manager.next_event():
     #shower   = manager.get_data(larlite.data.kMCShower,"mcreco")
     # ---------------------------------------------------------- #
 
-    if mc == True:
+    if MC == True:
 
         if mcdata.size() == 0: continue
     
