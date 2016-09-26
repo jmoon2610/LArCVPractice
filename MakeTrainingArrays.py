@@ -42,8 +42,8 @@ def SetupLarliteManager():
 #--------------------------------------------------------------------------------------------------------------#
 
 MC         = True
-CCQE       = False
-Contained  = False
+CCQE       = True
+Contained  = True
 nu_E_cut   = False
 
 nu_E_max        = 0.5       #GeV
